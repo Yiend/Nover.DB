@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <RootNamespace>Nover.DB.WebView2</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="**\*generate-proxy.json" />
+    <Content Remove="**\*generate-proxy.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="postMessagePromise.js" />
+    <None Remove="runtimes\winArm64\native\WebView2Loader.dll" />
+    <None Remove="runtimes\winX64\native\WebView2Loader.dll" />
+    <None Remove="runtimes\winX86\native\WebView2Loader.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="postMessagePromise.js" />
+    <EmbeddedResource Include="runtimes\winArm64\native\WebView2Loader.dll" />
+    <EmbeddedResource Include="runtimes\winX64\native\WebView2Loader.dll" />
+    <EmbeddedResource Include="runtimes\winX86\native\WebView2Loader.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2045.28" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nover.DB.Core\Nover.DB.Core.csproj" />
+  </ItemGroup>
+
+</Project>

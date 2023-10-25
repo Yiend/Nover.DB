@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <RootNamespace>Nover.DB.Application.Contracts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="7.4.0-rc.3" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="7.4.0-rc.3" />
+    <ProjectReference Include="..\Nover.DB.Core\Nover.DB.Core.csproj" />
+  </ItemGroup>
+
+</Project>

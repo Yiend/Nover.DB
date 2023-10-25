@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Nover.DB.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.4.0-rc.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.4.0-rc.3" />
+    <ProjectReference Include="..\Nover.DB.Application.Contracts\Nover.DB.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Nover.DB.Core\Nover.DB.Core.csproj" />
+    <ProjectReference Include="..\Nover.DB.Domain\Nover.DB.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

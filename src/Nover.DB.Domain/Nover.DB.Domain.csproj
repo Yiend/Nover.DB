@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <RootNamespace>Nover.DB.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="7.4.0-rc.3" />
+    <ProjectReference Include="..\Nover.DB.Core\Nover.DB.Core.csproj" />
+    <ProjectReference Include="..\Nover.DB.Domain.Shared\Nover.DB.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
