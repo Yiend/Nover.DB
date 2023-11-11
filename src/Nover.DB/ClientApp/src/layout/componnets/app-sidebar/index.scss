@@ -1,0 +1,13 @@
+@import "~@/styles/variables.scss";
+@import "~@/styles/mixins/mixins.scss";
+
+@include b(app-sidebar) {
+  width: $sidebar-width;
+  background-color: #324157;
+  height: 100%;
+  overflow: auto;
+  @include e(menu) {
+    background-color: #324157 !important;
+  }
+
+}

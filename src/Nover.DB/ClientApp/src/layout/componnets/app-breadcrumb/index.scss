@@ -1,0 +1,8 @@
+@import "~@/styles/variables.scss";
+@import "~@/styles/mixins/mixins.scss";
+
+
+@include b(app-breadcrumb){
+  width: 100%;
+
+}
